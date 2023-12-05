@@ -13,6 +13,13 @@ class PatologiaController extends Controller
         $patologias = Patologia::where('status', '=', true)->paginate(5);
         return view("patologia", compact("patologias"));
     }
+
+    public function show(string $id){
+        $patologia = Patologia::find($id);
+
+        return view("detalhe_patologia", compact("patologia"));
+    }
+
     public function create(){
         return view("formulario");
     }
@@ -46,6 +53,25 @@ class PatologiaController extends Controller
 
         return redirect()->route('patologia');
         
+    }
+
+    public function edit(string $id)
+    {
+        $patologia = Patologia::find($id);
+
+        return view("formulario_detalhe", compact("patologia"));
+    }
+
+    public function update(Request $request)
+    {
+        $patologia = Patologia::find($request->patologia_id);
+        $patologia->update([
+            'titulo' => $request->titulo,
+            'descricao' => $request->descricao,
+            'sintomas' => $request->sintomas,
+        ]);
+
+        return redirect()->route('detalhaPatologia', $request->patologia_id);
     }
 
     public function destroy(string $id) 

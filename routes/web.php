@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PatologiaController;
+use App\Http\Controllers\ProdutoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,3 +28,11 @@ Route::get('/formulario', [PatologiaController::class,'create'])->name("formular
 Route::post("/enviarFormulario", [PatologiaController::class,'store'])->name('enviarFormulario');
 Route::delete('/deletar/{id}', [PatologiaController::class,'destroy'])->name('deletaFormulario');
 Route::post('/buscarPatologia', [PatologiaController::class,'search'])->name('buscarPatologia');
+Route::get('/patologia/{id}', [PatologiaController::class, 'show'])->name('detalhaPatologia');
+Route::get('/patologia/editar/{id}', [PatologiaController::class, 'edit'])->name('editarPatologia');
+Route::post('/patologia/atualizar', [PatologiaController::class, 'update'])->name("atualizaPatologia");
+Route::get('produto/{patologia_id}', [ProdutoController::class, 'create'])->name("formularioProduto");
+Route::post('/formularioProduto', [ProdutoController::class, 'store'])->name("enviarFormularioProduto");
+Route::get('/produto/editar/{id}', [ProdutoController::class, 'edit'])->name("editarProduto");
+Route::post('/produto/atualizar', [ProdutoController::class, 'update'])->name('atualizaProduto');
+Route::delete('/deletaeProduto/{id}', [ProdutoController::class, 'destroy'])->name('deletaProduto');

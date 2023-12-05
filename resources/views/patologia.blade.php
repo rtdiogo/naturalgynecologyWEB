@@ -41,7 +41,7 @@
                     <tr>
                         <td>{{$patologia->titulo}}</td>
                         <td>{{mb_strimwidth($patologia->descricao, 0, 60, "...")}}</td>
-                        <td></td>
+                        <td><a href="{{route('detalhaPatologia', $patologia->id)}}" class="btn btn-primary">Detalhar</a></td>
                         <td>
                             <form action="{{route('deletaFormulario', $patologia->id)}}" method="post" onsubmit="return confirm('Deletar {{$patologia->titulo}} do sistema?')">
                                 @csrf
