@@ -1,7 +1,7 @@
 @extends('dashboard')
 @section('content')
 
-<div class="card" style="border-color: #a05a65;"> <div class="card-header text-white" style="background-color: #a05a65;"> Pesquisar patologia </div>
+<div class="card" style="border-color: #34A096;"> <div class="card-header text-white" style="background-color: #34A096;"> Pesquisar patologia </div>
     <div class="card-body">
         <form action="{{route('buscarPatologia')}}" method='POST'>
         @csrf
@@ -20,8 +20,8 @@
     </div>
 </div>
 
-<div class="card mt-4" style="border-color:  #a05a65">
-    <div class="card-header text-white" style="background-color: #a05a65;">
+<div class="card mt-4" style="border-color:  #34A096">
+    <div class="card-header text-white" style="background-color: #34A096;">
         Patologias
     </div>
     <div class="card-body">

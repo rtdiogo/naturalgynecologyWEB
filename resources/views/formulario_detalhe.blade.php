@@ -2,8 +2,8 @@
 @section('content')
 
 
-<div class="card mt-4 w-75 ms-5" style="border-color:  #a05a65 ">
-    <div class="card-header text-white" style="background-color: #a05a65;">Patologia</div>
+<div class="card mt-4 w-75 ms-5" style="border-color:  #34A096 ">
+    <div class="card-header text-white" style="background-color: #34A096;">Patologia</div>
         <div class="card-body">
             <form action="{{route('atualizaPatologia')}}" method='POST'>
             @csrf

@@ -7,10 +7,10 @@
 <title>Natural Gynecology</title>
 </head>
 
-<body style="background-color: #f8eed1">
+<body style="background-color: #D1F2EF">
     <section class="">
         <div class="px-4 py-5 px-md-5 text-center text-lg-start mt-5"
-            style="background-color: #f8eed1; margin-top: 15px;">
+            style="background-color: #D1F2EF; margin-top: 15px;">
             <div class="container">
                 <div class="row gx-lg-5 align-items-center">
                     <div class="col-lg-6 mb-5 mb-lg-0">

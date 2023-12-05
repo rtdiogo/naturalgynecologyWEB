@@ -1,7 +1,7 @@
 @extends('dashboard')
 @section('content')
-<div class="card" style="border-color: #a05a65;">
-    <div class="card-header text-white" style="background-color: #a05a65;">
+<div class="card" style="border-color: #34A096;">
+    <div class="card-header text-white" style="background-color: #34A096;">
         {{$patologia->titulo}}
     </div>    
     <div class="card-body">
@@ -28,8 +28,8 @@
     </div>
 </div>
 
-<div class="card mt-4" style="border-color:  #a05a65">
-    <div class="card-header text-white" style="background-color: #a05a65;">
+<div class="card mt-4" style="border-color:  #34A096">
+    <div class="card-header text-white" style="background-color: #34A096;">
         Produtos
     </div>
     <div class="card-body">
@@ -37,8 +37,8 @@
         <div class="table-responsive mt-3"></div>
         <table class="table table-bordered table-hover">
             <thead>
-                <tr class="text-center" style="background-color: #edd4be;">
-                    <th>Patologia</th>
+                <tr class="text-center" style="background-color: #34A096;">
+                    <th>Produto</th>
                     <th>Descrição</th>
                     <th>Editar</th>
                     <th>Excluir</th>

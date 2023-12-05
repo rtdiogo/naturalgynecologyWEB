@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,23 +12,25 @@
 </head>
 
 <body>
-<div class='dashboard'>
-    <div class="dashboard-nav">
-        <header><a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a><a href="#" class="brand-logo"> <i class="fa fa-5x fa-user-circle d-flex justify-content-center" aria-hidden="true"></i></a>
-        </header>
-        <nav class="dashboard-nav-list"><a href="{{route('home')}}" class="dashboard-nav-item"><i class="fas fa-home"></i>Home </a><a
-                href="{{route('patologia')}}" class="dashboard-nav-item"><i class="fas fa-tachometer-alt"></i> Patologia</a>
-          <a href="{{route('sair')}}" class="dashboard-nav-item"><i class="fas fa-sign-out-alt"></i> Sair </a>
-        </nav>
-    </div>
-    <div class='dashboard-app'>
-        <div class='dashboard-content'>
-            <div class='container'>
-            @yield('content')
+    <div class='dashboard'>
+        <div class="dashboard-nav">
+            <header><a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a><a href="#" class="brand-logo"> <i
+                        class="fa fa-5x fa-user-circle d-flex justify-content-center" aria-hidden="true"></i></a>
+            </header>
+            <nav class="dashboard-nav-list"><a href="{{route('home')}}" class="dashboard-nav-item"><i
+                        class="fas fa-home"></i>Home </a><a href="{{route('patologia')}}" class="dashboard-nav-item"><i
+                        class="fas fa-tachometer-alt"></i> Patologia</a>
+                <a href="{{route('sair')}}" class="dashboard-nav-item"><i class="fas fa-sign-out-alt"></i> Sair </a>
+            </nav>
+        </div>
+        <div class='dashboard-app'>
+            <div class='dashboard-content'>
+                <div class='container'>
+                    @yield('content')
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 
 
@@ -42,7 +45,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-        @yield('script')
+    @yield('script')
 </body>
 
 </html>
